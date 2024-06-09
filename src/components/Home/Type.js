@@ -10,6 +10,7 @@ function Type() {
           "Intern at MESH AG",
         ],
         autoStart: true,
+        delay: 100,
         loop: true,
         deleteSpeed: 50,
       }}
