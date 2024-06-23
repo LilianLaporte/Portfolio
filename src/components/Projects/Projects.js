@@ -8,7 +8,8 @@ import up_up from "../../Assets/Projects/Double_pendulum.gif";
 import DrivingGames from "../../Assets/Projects/Driving_Games.gif";
 import archipelago from "../../Assets/Projects/Archipelago.png";
 import semoir from "../../Assets/Projects/Semoir_auto.png";
-import mirror from "../../Assets/Projects/Untitled.png";
+import mirror from "../../Assets/Projects/Mirror.png";
+import Xplore from "../../Assets/Projects/Xplore.gif";
 
 function Projects() {
   return (
@@ -92,6 +93,17 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Xplore}
+              isBlog={false}
+              title="Xplore"
+              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
+              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>
