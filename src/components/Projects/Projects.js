@@ -2,13 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import US_image from "../../Assets/Projects/US_image.gif";
+import rocketlander from "../../Assets/Projects/MPC_success.gif";
+import up_up from "../../Assets/Projects/Double_pendulum.gif";
+import DrivingGames from "../../Assets/Projects/Driving_Games.gif";
 import archipelago from "../../Assets/Projects/Archipelago.png";
+import semoir from "../../Assets/Projects/Semoir_auto.png";
+import mirror from "../../Assets/Projects/Untitled.png";
 
 function Projects() {
   return (
@@ -16,10 +16,10 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">School </strong>Projects
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on during my studies.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -29,63 +29,67 @@ function Projects() {
               title="Archipelago"
               description="Due to a predicted rise in sea level, a city-state on the edge of the ocean decides to transform itself into a floating city. We have developed a tool to evaluate a city plan in which each district is a circular island and the districts are linked by floating bridges. Certain efficiency criteria are systematically evaluated."
               ghLink="https://github.com/LilianLaporte/Archipelago/tree/main"
-              demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={DrivingGames}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Driving Game"
+              description="The project's goal is to guide each agent (vehicle) to a designated area by first generating the path, then controlling the agent, and finally avoiding both static obstacles and other agents."
+              ghLink="https://github.com/LilianLaporte/Driving-games"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={rocketlander}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Rocket Lander"
+              description="The project is a simulation of the SpaceX Falcon 9 vertical landing phase its purpose is to develop a controller to land the rocket."
+              ghLink="https://github.com/LilianLaporte/rocket-lander"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={US_image}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Real Time Ultrasound Imaging Feedback"
+              description="The purpose of the project is to build a real-time ultrasound imaging feedback in order to control microbubbles to a specific location."
+              ghLink="https://github.com/LilianLaporte/Real-Time-Ultrasound-Imaging-Feedback"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={up_up}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Double Pendulum"
+              description="The purpose of the project is to control a double pendulum by stabilizing it in 2 equilibrium positions and rejecting the input disturbance."
+              ghLink="https://github.com/LilianLaporte/Double-pendulum"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={semoir}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
+              title="Automatic Seed Drill"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mirror}
+              isBlog={false}
+              title="Mehanism for a femtosecond laser micromachining machine"
+              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
+              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
             />
           </Col>
         </Row>
