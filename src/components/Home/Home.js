@@ -44,8 +44,12 @@ function Home() {
               />
             </Col>
           </Row>
-          <Home2 />
-          <About />
+          <Row>
+            <Home2 />
+          </Row>
+          <Row>
+            <About />
+          </Row>
           <Row>
             <Col md={12} className="home-about-social">
               <h1>FIND ME ON</h1>

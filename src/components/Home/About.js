@@ -7,9 +7,10 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
+
 function About() {
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="home-about-section" id="about2">
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
