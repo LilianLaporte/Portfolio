@@ -26,11 +26,33 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={archipelago}
+              imgPath={US_image}
               isBlog={false}
-              title="Archipelago"
-              description="Due to a predicted rise in sea level, a city-state on the edge of the ocean decides to transform itself into a floating city. We have developed a tool to evaluate a city plan in which each district is a circular island and the districts are linked by floating bridges. Certain efficiency criteria are systematically evaluated."
-              ghLink="https://github.com/LilianLaporte/Archipelago/tree/main"
+              title="Real Time Ultrasound Imaging Feedback"
+              description="The purpose of the project is to build a real-time ultrasound imaging feedback in order to control microbubbles to a specific location."
+              ghLink="https://github.com/LilianLaporte/Real-Time-Ultrasound-Imaging-Feedback"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Arc}
+              isBlog={false}
+              title="ARC"
+              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
+              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              websiteLink="https://riverclean.ethz.ch/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Xplore}
+              isBlog={false}
+              title="Xplore"
+              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
+              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              websiteLink="https://epfl-xplore.ch/"
             />
           </Col>
 
@@ -56,16 +78,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={US_image}
-              isBlog={false}
-              title="Real Time Ultrasound Imaging Feedback"
-              description="The purpose of the project is to build a real-time ultrasound imaging feedback in order to control microbubbles to a specific location."
-              ghLink="https://github.com/LilianLaporte/Real-Time-Ultrasound-Imaging-Feedback"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={up_up}
               isBlog={false}
               title="Double Pendulum"
@@ -76,11 +88,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={semoir}
+              imgPath={archipelago}
               isBlog={false}
-              title="Automatic Seed Drill"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Archipelago"
+              description="Due to a predicted rise in sea level, a city-state on the edge of the ocean decides to transform itself into a floating city. We have developed a tool to evaluate a city plan in which each district is a circular island and the districts are linked by floating bridges. Certain efficiency criteria are systematically evaluated."
+              ghLink="https://github.com/LilianLaporte/Archipelago/tree/main"
             />
           </Col>
 
@@ -96,23 +108,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Xplore}
+              imgPath={semoir}
               isBlog={false}
-              title="Xplore"
+              title="Automatic Seed Drill"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              websiteLink="https://epfl-xplore.ch/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Arc}
-              isBlog={false}
-              title="ARC"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              websiteLink="https://riverclean.ethz.ch/"
             />
           </Col>
 
