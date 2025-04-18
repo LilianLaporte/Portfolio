@@ -71,7 +71,6 @@ function Projects() {
               title="Double Pendulum"
               description="The purpose of the project is to control a double pendulum by stabilizing it in 2 equilibrium positions and rejecting the input disturbance."
               ghLink="https://github.com/LilianLaporte/Double-pendulum"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
@@ -102,6 +101,7 @@ function Projects() {
               title="Xplore"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              websiteLink="https://epfl-xplore.ch/"
             />
           </Col>
 
@@ -112,6 +112,7 @@ function Projects() {
               title="ARC"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              websiteLink="https://riverclean.ethz.ch/"
             />
           </Col>
 
