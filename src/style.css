@@ -68,6 +68,14 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(59, 130, 246, 0.561) !important;
 }
 
+.publication-card-view {
+  box-shadow: 0 4px 5px 3px rgba(30, 58, 138, 0.459) !important;
+}
+
+.publication-card-view:hover {
+  box-shadow: 0 4px 4px 5px rgba(59, 130, 246, 0.561) !important;
+}
+
 .blog-card-view {
   box-shadow: 0 3px 3px 2px rgba(30, 58, 138, 0.459) !important;
 }
@@ -562,6 +570,39 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(59, 130, 246, 0.561) !important;
 }
 
+.publication-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.publication-card {
+  width: 100% !important;
+  max-width: 1500px !important;
+  margin: 0 auto !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.publication-card-view {
+  box-shadow: 0 4px 5px 3px rgba(30, 58, 138, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.publication-card-view:hover {
+  transform: scale(1.02) !important;
+  opacity: 1 !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(59, 130, 246, 0.561) !important;
+}
+
 .blog-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
@@ -621,6 +662,14 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  text-align: center !important;
+}
+
+.publication-heading {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
