@@ -7,6 +7,9 @@ import rocketlander from "../../Assets/Projects/MPC_success.gif";
 import up_up from "../../Assets/Projects/Double_pendulum.gif";
 import DrivingGames from "../../Assets/Projects/Driving_Games.gif";
 import archipelago from "../../Assets/Projects/Archipelago.png";
+import circuit from "../../Assets/Projects/Circuit.png";
+import temp_controller from "../../Assets/Projects/Temp_controller.png";
+import plate_recognition from "../../Assets/Projects/Plate_recognition.gif";
 import semoir from "../../Assets/Projects/Semoir_auto.png";
 import mirror from "../../Assets/Projects/Mirror.png";
 import Xplore from "../../Assets/Projects/Xplore.gif";
@@ -94,11 +97,41 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={plate_recognition}
+              isBlog={false}
+              title="Plate Recognition"
+              description="Designed and implemented a system to automatically recognize the number/letter combination from license plates in a video sequence under various conditions (i.e. different angles, types of lightning, speeds, types of plates...etc). "
+              ghLink="https://github.com/LilianLaporte/Plate-Recognition"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={archipelago}
               isBlog={false}
               title="Archipelago"
               description="Due to a predicted rise in sea level, a city-state on the edge of the ocean decides to transform itself into a floating city. We have developed a tool to evaluate a city plan in which each district is a circular island and the districts are linked by floating bridges. Certain efficiency criteria are systematically evaluated."
               ghLink="https://github.com/LilianLaporte/Archipelago/tree/main"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={temp_controller}
+              isBlog={false}
+              title="Temperature Controller"
+              description="Created a system using the AVR STK300 microcontroller with a 1-wire temperature sensor. It includes a servo motor, a 2x16 LCD display, and a buzzer for interaction and feedback."
+              ghLink="https://github.com/LilianLaporte/temperature-controller"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={circuit}
+              isBlog={false}
+              title="Logic Watch"
+              description="Built a digital watch with a buzzer using the DE10-Lite board. The entire system was designed using only logic gates in Logisim Evolution."
+              ghLink="https://github.com/LilianLaporte/logic-watch"
             />
           </Col>
 
