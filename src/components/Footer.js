@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaChessBishop } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -37,6 +37,16 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://link.chess.com/friend/6pSUAr"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaChessBishop />
               </a>
             </li>
           </ul>

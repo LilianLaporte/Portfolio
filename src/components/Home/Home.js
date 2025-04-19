@@ -8,7 +8,7 @@ import About from "./About";
 import {
   AiFillGithub,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaChessBishop  } from "react-icons/fa";
 
 function Home() {
   return (
@@ -75,6 +75,16 @@ function Home() {
                     className="icon-colour  home-social-icons"
                   >
                     <FaLinkedinIn />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://link.chess.com/friend/6pSUAr"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour  home-social-icons"
+                  >
+                    <FaChessBishop />
                   </a>
                 </li>
               </ul>
