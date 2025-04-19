@@ -10,7 +10,7 @@ function Publications() {
       <Particle />
       <Container>
         <h1 className="publication-heading">
-          My <strong className="purple">Publications</strong>
+          My <strong className="blue">Publications</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few publications I've contributed to.

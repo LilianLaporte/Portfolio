@@ -13,12 +13,12 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="blue"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            Hi, I’m a French engineering student with a background in Microtechnics from <b className="purple">EPFL</b>, including an exchange at <b className="purple">TU Delft</b>. <br/>
-            I'm currently pursuing my Master's in Robotics, Systems, and Control at <b className="purple">ETH Zurich</b>, where I get to combine my passion for robotics and cutting-edge technology (and occasionally make robots behave). <br/>
-            Outside the lab, you’ll probably find me exploring <b className="purple">nature</b> or getting humbled by a game of <b className="purple" >chess</b> — my favorite way to challenge both myself and my patience.
+            Hi, I’m a French engineering student with a background in Microtechnics from <b className="blue">EPFL</b>, including an exchange at <b className="blue">TU Delft</b>. <br/>
+            I'm currently pursuing my Master's in Robotics, Systems, and Control at <b className="blue">ETH Zurich</b>, where I get to combine my passion for robotics and cutting-edge technology (and occasionally make robots behave). <br/>
+            Outside the lab, you’ll probably find me exploring <b className="blue">nature</b> or getting humbled by a game of <b className="blue" >chess</b> — my favorite way to challenge both myself and my patience.
             </p>
           </Col>
           <Col md={3} className="myAvtar">

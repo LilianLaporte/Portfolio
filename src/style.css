@@ -14,7 +14,7 @@ html {
   --imp-text-color: #4da8da;
 }
 
-.purple {
+.blue {
   color: var(--imp-text-color) !important;
 }
 
@@ -29,7 +29,7 @@ button:focus {
   --text-color: #e0f2fe; /* Light text color */
 }
 
-.purple {
+.blue {
   color: var(--secondary-color) !important;
 }
 
