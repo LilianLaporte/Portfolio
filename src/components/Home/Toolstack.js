@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
@@ -7,24 +7,45 @@ import {
   SiNotion,
 } from "react-icons/si";
 import {DiGit} from "react-icons/di";
+
+function TechIcon({ children, label }) {
+  const [isHovered, setIsHovered] = useState(false);
+  
+  return (
+    <Col 
+      xs={4} 
+      md={2} 
+      className="tech-icons"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {isHovered ? (
+        <div className="skill-name">{label}</div>
+      ) : (
+        children
+      )}
+    </Col>
+  );
+}
+
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <TechIcon label="Git">
         <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </TechIcon>
+      <TechIcon label="Linux">
         <SiLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </TechIcon>
+      <TechIcon label="VS Code">
         <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </TechIcon>
+      <TechIcon label="Notion">
         <SiNotion />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </TechIcon>
+      <TechIcon label="LaTeX">
         <SiLatex />
-      </Col>
+      </TechIcon>
     </Row>
   );
 }

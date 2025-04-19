@@ -717,6 +717,40 @@ button:focus {
   border: 2.2px solid rgba(59, 130, 246, 0.883) !important; /* Blue */
 }
 
+.skill-name {
+  font-size: 2.5rem !important; /* Increased font size from 1rem to 1.5rem */
+  font-weight: 1000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: rgba(19, 59, 108, 0.637) !important; /* Text color - using the border color */
+  background-color: white !important; /* Background color */
+}
+
+/* Add hover style that inverts colors */
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid white !important; /* white */
+  background-color: white !important; /* Background becomes white */
+}
+
+.tech-icons:hover .skill-name {
+  color: rgba(19, 59, 108, 0.637) !important; /* Text color */
+  background-color: transparent !important; /* Keep background transparent so parent color shows */
+}
+/* Also make sure the parent has a relative position */
+.tech-icons {
+  position: relative !important;
+}
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
