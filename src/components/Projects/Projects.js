@@ -29,7 +29,8 @@ function Projects() {
               imgPath={US_image}
               isBlog={false}
               title="Real Time Ultrasound Imaging Feedback"
-              description="The purpose of the project is to build a real-time ultrasound imaging feedback in order to control microbubbles to a specific location."
+              description="This project explores a new way to visualize and guide microbubbles (MBs) using ultrasound imaging and custom-made channels. 
+              It introduces real-time feedback and a tracking method based on AI. The system can even steer MBs under strong flow conditions, though tracking becomes difficult at high speeds."
               ghLink="https://github.com/LilianLaporte/Real-Time-Ultrasound-Imaging-Feedback"
             />
           </Col>
@@ -39,8 +40,8 @@ function Projects() {
               imgPath={Arc}
               isBlog={false}
               title="ARC"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              description="Assisted the team in improving an automatic waste sorting system by implementing a new computer vision pipeline for waste tracking, developing a 
+              simulation of the entire system in Gazebo, and enhancing the presorting stage."
               websiteLink="https://riverclean.ethz.ch/"
             />
           </Col>
@@ -50,8 +51,13 @@ function Projects() {
               imgPath={Xplore}
               isBlog={false}
               title="Xplore"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              description="Responsible for designing and building the forearm of a Mars rover as part of an inter-university competition.<br />
+                <span style='font-weight: bold;'>Awards:</span>
+                <ul style='list-style-position: inside; margin: 0; padding-left: 1.5em; display: inline;'>
+                  <li>#3 at European Rover Challenge (ERC) for our first year of creation</li>
+                  <li>Special prize for handling task</li>
+                  <li>Special prize for science task</li>
+                </ul>"
               websiteLink="https://epfl-xplore.ch/"
             />
           </Col>
@@ -61,7 +67,7 @@ function Projects() {
               imgPath={DrivingGames}
               isBlog={false}
               title="Driving Game"
-              description="The project's goal is to guide each agent (vehicle) to a designated area by first generating the path, then controlling the agent, and finally avoiding both static obstacles and other agents."
+              description="Guide each agent (vehicle) to a designated area by first generating the path, then controlling the agent, and finally avoiding both static obstacles and other agents."
               ghLink="https://github.com/LilianLaporte/Driving-games"
             />
           </Col>
@@ -71,7 +77,7 @@ function Projects() {
               imgPath={rocketlander}
               isBlog={false}
               title="Rocket Lander"
-              description="The project is a simulation of the SpaceX Falcon 9 vertical landing phase its purpose is to develop a controller to land the rocket."
+              description="Designed a system to simulate the vertical landing of a SpaceX Falcon 9 rocket. Progressed from basic to advanced controllers: starting with PID, then Model Predictive Control, and finally a Reinforcement Learning-based approach."
               ghLink="https://github.com/LilianLaporte/rocket-lander"
             />
           </Col>
@@ -81,7 +87,7 @@ function Projects() {
               imgPath={up_up}
               isBlog={false}
               title="Double Pendulum"
-              description="The purpose of the project is to control a double pendulum by stabilizing it in 2 equilibrium positions and rejecting the input disturbance."
+              description="Built a controller to stabilize a double pendulum in both upright and downward positions. Used LQR for the challenging 'up-up' balance and a cascaded PID to handle disturbances in the 'down-down' state."
               ghLink="https://github.com/LilianLaporte/Double-pendulum"
             />
           </Col>
@@ -101,8 +107,8 @@ function Projects() {
               imgPath={mirror}
               isBlog={false}
               title="Mehanism for a femtosecond laser micromachining machine"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              description="Created a dynamic mechanism for a femtosecond laser machine by replacing a fixed mirror with a movable one on a dual-axis rotating system. 
+                The design allows precise mirror pivoting from 10Hz to 820Hz while maintaining balance."
             />
           </Col>
 
@@ -111,8 +117,8 @@ function Projects() {
               imgPath={semoir}
               isBlog={false}
               title="Automatic Seed Drill"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              description="Developed an automatic seed drill that opens a trench, plants seeds, and closes it behind. 
+                Users can adjust seed size and spacing to customize planting at any time."
             />
           </Col>
 
