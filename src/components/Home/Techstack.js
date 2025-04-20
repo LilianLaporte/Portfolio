@@ -18,6 +18,7 @@ import ROSSVG from '../../Assets/custom_svg/Ros_logo.svg';
 import CSVG from '../../Assets/custom_svg/C_logo.svg';
 import ASMSVG from '../../Assets/custom_svg/ASM_logo.svg';
 import SolidworksSVG from '../../Assets/custom_svg/Solidworks_logo.svg';
+import CLogo from '../../Assets/custom_svg/C_logo';
 
 // New component for tech icon with hover effect
 function TechIcon({ children, label }) {
@@ -60,7 +61,8 @@ function Techstack() {
       </TechIcon>
       
       <TechIcon label="C">
-        <img src={CSVG} alt="C Icon"/>
+        {/* <img src={CSVG} alt="C Icon"/> */}
+        <CLogo />
       </TechIcon>
       
       <TechIcon label="ROS">
