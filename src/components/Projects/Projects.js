@@ -14,6 +14,7 @@ import semoir from "../../Assets/Projects/Semoir_auto.png";
 import mirror from "../../Assets/Projects/Mirror.png";
 import Xplore from "../../Assets/Projects/Xplore.gif";
 import Arc from "../../Assets/Projects/Arc.gif";
+import Backflip from "../../Assets/Projects/backflip.gif";
 
 function Projects() {
   return (
@@ -27,6 +28,15 @@ function Projects() {
           Here are a few projects I've worked on during my studies.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Backflip}
+              isBlog={false}
+              title=" Guiding Exploration in Fine-Tuning via Simple Trajectory Pre-training for Advanced Skill Learning"
+              description="This work introduces a two-stage learning framework combining imitation-based pre-training and reinforcement learning for complex robot behaviors. A policy is first trained using Asymmetric Critic Distillation from a single trajectory with privileged information. It is then fine-tuned with KL-regularized RL, enabling skills like jumping and backflipping."
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={US_image}
