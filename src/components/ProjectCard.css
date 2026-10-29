@@ -1,0 +1,126 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.4s var(--ease),
+    box-shadow 0.4s var(--ease),
+    border-color 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border-strong);
+}
+
+/* Whole-card click target that stays keyboard accessible. */
+.project-card__hit {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: inherit;
+}
+
+.project-card__hit:focus-visible {
+  outline-offset: -2px;
+  border-radius: var(--radius);
+}
+
+.media {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-subtle);
+}
+
+.media video,
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__media {
+  aspect-ratio: 16 / 10;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-card__media video,
+.project-card__media img {
+  transition: transform 0.8s var(--ease);
+}
+
+.project-card:hover .project-card__media video,
+.project-card:hover .project-card__media img {
+  transform: scale(1.04);
+}
+
+.project-card__body {
+  display: grid;
+  gap: 10px;
+  padding: 20px 22px 22px;
+  align-content: start;
+  flex: 1;
+}
+
+.project-card__context {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.project-card__title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.project-card__arrow {
+  flex: none;
+  margin-top: 2px;
+  color: var(--text-faint);
+  transition:
+    transform 0.3s var(--ease),
+    color 0.3s;
+}
+
+.project-card:hover .project-card__arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+.project-card__summary {
+  color: var(--text-muted);
+  font-size: 0.925rem;
+  margin-bottom: 4px;
+}
+
+.project-card--large .project-card__title {
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+}
+
+@media (min-width: 900px) {
+  .project-card--large {
+    flex-direction: row;
+  }
+  .project-card--large .project-card__media {
+    flex: 1.35;
+    aspect-ratio: auto;
+    min-height: 360px;
+    border-bottom: 0;
+    border-right: 1px solid var(--border);
+  }
+  .project-card--large .project-card__body {
+    flex: 1;
+    padding: 32px;
+    align-content: center;
+    gap: 14px;
+  }
+}

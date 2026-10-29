@@ -1,0 +1,118 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  height: var(--nav-h);
+  border-bottom: 1px solid transparent;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s,
+    backdrop-filter 0.3s;
+}
+
+.nav--solid {
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom-color: var(--border);
+}
+
+.nav__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__brand {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text);
+  padding: 6px 0;
+}
+
+.nav__links {
+  display: flex;
+  gap: 4px;
+  margin-inline: auto;
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg-elevated) 60%, transparent);
+}
+
+.nav__link {
+  position: relative;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition:
+    color 0.2s,
+    background-color 0.2s;
+}
+
+.nav__link:hover {
+  color: var(--text);
+}
+
+.nav__link.active {
+  color: var(--text);
+  background: var(--bg-subtle);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav__cta {
+  margin-left: 8px;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav__mobile {
+  position: fixed;
+  inset: var(--nav-h) 0 0;
+  background: var(--bg);
+  padding-top: 16px;
+  animation: page-in 0.3s var(--ease);
+}
+
+.nav__mobile[hidden] {
+  display: none;
+}
+
+.nav__mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--text-muted);
+}
+
+.nav__mobile-link.active {
+  color: var(--text);
+}
+
+@media (max-width: 760px) {
+  .nav__links,
+  .nav__cta {
+    display: none;
+  }
+  .nav__actions {
+    margin-left: auto;
+  }
+  .nav__toggle {
+    display: inline-grid;
+  }
+}
