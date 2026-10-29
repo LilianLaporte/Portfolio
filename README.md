@@ -1,76 +1,56 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+# Lilian Laporte — Portfolio
 
-<br/>
+Personal portfolio: projects, resume and publications. Live at [lilianlaporte.vercel.app](https://lilianlaporte.vercel.app).
 
-<center>
+![Screenshot of the home page](docs/screenshot.webp)
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+## Stack
 
-</center>
+- [React 19](https://react.dev) + [Vite](https://vite.dev)
+- [React Router](https://reactrouter.com) for the pages (`/`, `/projects`, `/resume`, `/publications`)
+- Plain CSS with design tokens and automatic light / dark themes (`src/styles/global.css`)
+- [Geist](https://vercel.com/font) font, [react-icons](https://react-icons.github.io/react-icons/)
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+## Getting started
 
-## TL;DR
+Requires Node.js 22 or newer.
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # production build in ./build
+npm run preview  # serve the production build
+```
 
-## Built With
+## Editing content
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+All content lives in `src/data/`, so updates rarely need component changes:
 
-This project was built using these technologies.
+| File                     | What it holds                                         |
+| ------------------------ | ----------------------------------------------------- |
+| `profile.js`             | Name, role, tagline, bio, links, languages, interests |
+| `projects.js`            | Project cards; `featured: true` shows one on the home page |
+| `experience.js`          | Resume timeline: experience, research, education      |
+| `publications.js`        | Publications                                          |
+| `skills.js`              | Skill groups shown on the home and resume pages       |
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+The CV is served from `public/Lilian_Laporte_CV.pdf` — replace that file to update it.
 
-## Features
+### Adding project media
 
-**📖 Multi-Page Layout**
+Use short MP4 clips instead of GIFs (they are ~30× smaller). To convert a GIF and grab a poster frame:
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+```bash
+ffmpeg -i clip.gif -an -movflags +faststart -c:v libx264 -crf 26 -pix_fmt yuv420p \
+  -vf "scale='min(800,iw)':-2,scale=trunc(iw/2)*2:trunc(ih/2)*2" src/assets/projects/clip.mp4
+ffmpeg -i clip.gif -vframes 1 -vf "scale='min(800,iw)':-2" src/assets/projects/clip.webp
+```
 
-**📱 Fully Responsive**
+## Deployment
 
-## Getting Started
+`npm run build` outputs a static site to `build/`. `vercel.json` rewrites every path to `index.html`
+so client-side routes work on refresh; other hosts need the equivalent SPA fallback.
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+## Credits
 
-## 🛠 Installation and Setup Instructions
-
-1. Installation: `npm install`
-
-2. In the project directory, you can run: `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
-
-## Usage Instructions
-
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
-
-### Show your support
-
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+Originally based on [soumyajit4419/Portfolio](https://github.com/soumyajit4419/Portfolio); redesigned and rewritten in 2026.
