@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)" />
+
+    <title>Lilian Laporte · Robotics Engineer</title>
+    <meta
+      name="description"
+      content="Lilian Laporte — Research Engineer at the Robotic Systems Lab, ETH Zurich. Robot learning, control and perception."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lilianlaporte.vercel.app" />
+    <meta property="og:title" content="Lilian Laporte · Robotics Engineer" />
+    <meta
+      property="og:description"
+      content="Research Engineer at the Robotic Systems Lab, ETH Zurich. Robot learning, control and perception."
+    />
+    <meta property="og:image" content="https://lilianlaporte.vercel.app/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        const saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
